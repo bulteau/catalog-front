@@ -21,4 +21,6 @@ Clone this repo and npm install
 Launch this command line : `gatsby develop`
 
 Go to : http://localhost:8000/
-And click on product file : http://localhost:8000/L1212-00-T01
+And click on product file to see recommandation: http://localhost:8000/L1212-00-T01
+
+![Recommandations](/tmp/screenshot.png "Grey Recommandations")

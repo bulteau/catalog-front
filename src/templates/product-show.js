@@ -9,8 +9,8 @@ export default ({ data }) => {
   return (
     <Layout>
       <div>
-        <img src={url} alt="Logo" style={{ width: `300px`, float: `left` }} />
-        <div style={{ float: `left` }}>
+        <img src={url} alt="Logo" style={{ width: `30%`, float: `left` }} />
+        <div style={{ width: `70%`, float: `left` }}>
           <h1>{title}</h1>
           <ul>
             <li>{gender_id}</li>
