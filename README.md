@@ -17,6 +17,7 @@ Clone this repo and npm install
 ### Step 1
 **prerequisite :**
 - Launch catalog-api [see more](https://github.com/bulteau/catalog-api)
+- Gatsby Cli installed : `npm install -g gatsby-cli`
 
 Launch this command line : `gatsby develop`
 
