@@ -4,7 +4,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
-      allProductsCsv {
+      allProductsCsv  {
         edges {
           node {
             id

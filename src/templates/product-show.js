@@ -1,28 +1,34 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Recommandations from "../components/recommandations"
+import Layout from "../components/layout"
 
 export default ({ data }) => {
-  const { title, gender_id, composition, sleeve, photo } = data.productsCsv;
+  const { id, title, gender_id, composition, sleeve, photo } = data.productsCsv;
   const url = "https:" + photo;
   return (
-    <div>
-      <img src={url} alt="Logo" style={{ width: `300px`, float: `left` }} />
-      <div style={{ float: `left` }}>
-        <h1>{title}</h1>
-        <ul>
-          <li>{gender_id}</li>
-          <li>{composition}</li>
-          <li>{sleeve}</li>
-        </ul>
+    <Layout>
+      <div>
+        <img src={url} alt="Logo" style={{ width: `300px`, float: `left` }} />
+        <div style={{ float: `left` }}>
+          <h1>{title}</h1>
+          <ul>
+            <li>{gender_id}</li>
+            <li>{composition}</li>
+            <li>{sleeve}</li>
+          </ul>
+        </div>
       </div>
-
-    </div>
+      <hr style={{ clear: 'both', borderTop: '1px solid #EEE' }} />
+      <Recommandations id={id} />
+      <hr style={{ clear: 'both'}} />
+    </Layout>
   )
 }
 
 export const query = graphql`
-  query {
-    productsCsv {
+  query($id: String!) {
+    productsCsv ( id: { eq: $id }) {
       id
       title
       gender_id

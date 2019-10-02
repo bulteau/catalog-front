@@ -9,7 +9,6 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     {data.allProductsCsv.edges.map(({ node }) => (
       <div key={node.id} style={{ width: `300px`, float: `left` }}>
-
         <Link
           to={`/${node.id}`}
         >
