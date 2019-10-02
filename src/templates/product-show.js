@@ -20,6 +20,7 @@ export default ({ data }) => {
         </div>
       </div>
       <hr style={{ clear: 'both', borderTop: '1px solid #EEE' }} />
+      <h2>Nos Recommandations</h2>
       <Recommandations id={id} />
       <hr style={{ clear: 'both'}} />
     </Layout>
